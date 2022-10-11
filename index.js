@@ -161,7 +161,7 @@ const root = protobuf.load('YPricingData.proto', (error, root) => {
 
 app.get("/", async(req, res) => {
     res.setHeader("Access-Control-Allow-Origin", "*")
-
+    res.send("home")
 
 })
 
