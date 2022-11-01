@@ -186,6 +186,7 @@ app.get("/research-update", async(req, res) => {
 app.get("/nifty-gainers", async(req, res) => {
     const data = await Nifty.find({}).sort([
         ['_id', -1]
+        
     ])
     res.setHeader("Access-Control-Allow-Origin", "*")
     res.json({ nifty: data })
